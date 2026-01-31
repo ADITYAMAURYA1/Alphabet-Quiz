@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Alphabet | SSC & Reasoning Prep</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+        <div class="globe globe-3"></div>
+    </div>
+
+    <main class="app-container">
+        <!-- Home Screen -->
+        <section id="home-screen" class="screen active">
+            <a href="#" target="_blank" class="github-link" aria-label="View on GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                </svg>
+            </a>
+            <div class="logo-placeholder">
+                <div class="logo-circle">LA</div>
+            </div>
+            <h1 class="title">Learn <span class="highlight">Alphabet</span></h1>
+            <p class="subtitle">Master reasoning & coding-decoding for exams</p>
+
+            <div class="mode-cards">
+                <div class="mode-card" data-mode="opposite">
+                    <div class="mode-icon">A↔Z</div>
+                    <h3>Opposite Letters</h3>
+                    <p>Find the reverse pair</p>
+                </div>
+                <div class="mode-card" data-mode="places">
+                    <div class="mode-icon">A=1</div>
+                    <h3>Letter Places</h3>
+                    <p>Find the numeric position</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructions Screen -->
+        <section id="instruction-screen" class="screen hidden">
+            <h2 class="section-title">How to Play</h2>
+            <div id="instruction-text" class="instruction-box">
+                <!-- Dynamic text injected by JS -->
+            </div>
+            <button id="goto-setup-btn" class="primary-btn">Next</button>
+            <button class="text-btn back-btn">Back</button>
+        </section>
+
+        <!-- Setup Screen -->
+        <section id="setup-screen" class="screen hidden">
+            <h2 class="section-title">Configuration</h2>
+            <p class="subtitle" id="setup-mode-name">Mode Name</p>
+
+            <div class="input-group">
+                <label for="question-count">Number of Questions</label>
+                <input type="number" id="question-count" value="30" min="5" max="50">
+            </div>
+
+            <button id="start-game-btn" class="primary-btn">Start Quiz</button>
+            <button class="text-btn back-btn">Back</button>
+        </section>
+
+        <!-- Quiz Screen -->
+        <section id="quiz-screen" class="screen hidden">
+            <header class="quiz-header">
+                <div class="progress-pill">
+                    <span id="current-q">1</span> / <span id="total-q">10</span>
+                </div>
+                <div class="score-pill">
+                    Score: <span id="score-display">0</span>
+                </div>
+            </header>
+
+            <div class="question-display">
+                <div class="letter-card">
+                    <span id="question-letter">A</span>
+                </div>
+                <p class="instruction" id="input-instruction">Select the opposite</p>
+                <div id="typed-display" class="typed-input hidden"></div>
+            </div>
+
+            <!-- Dynamic Input Area -->
+            <div id="input-container" class="input-container">
+                <!-- Keypad or Numpad will be injected here -->
+            </div>
+        </section>
+
+        <!-- Result Screen -->
+        <section id="result-screen" class="screen hidden">
+            <h2 class="result-title">Well Done!</h2>
+            <div class="score-card">
+                <p class="score-label">Your Score</p>
+                <div class="final-score"><span id="final-score">0</span> / <span id="final-total">10</span></div>
+            </div>
+            <button id="home-btn" class="primary-btn">Home</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
