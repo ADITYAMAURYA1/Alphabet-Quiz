@@ -1,8 +1,6 @@
-# 🧠 Learn Alphabet - Reasoning & Quiz App
+# 🧠 Alphabet-Quiz - Reasoning & Quiz App
 
 > A beautiful, interactive web app designed to help students master **Alphabet Reasoning** concepts for competitive exams (SSC, Banking, CSAT, etc.).
-
-![App Screenshot](https://via.placeholder.com/800x400?text=Learn+Alphabet+App+Preview) <!-- Replace with actual screenshot later -->
 
 ## ✨ Features
 
@@ -28,9 +26,11 @@ This app focuses on two core memory skills required for logical reasoning:
 
 No installation needed! This is a static web application.
 
+🚀 **[Play Now (Live Demo)](https://adityamaurya1.github.io/alphabet-quiz/)**
+
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/your-username/opposite-quiz.git
+    git clone https://github.com/ADITYAMAURYA1/alphabet-quiz.git
     ```
 2.  **Open the App**
     Simply double-click `index.html` to launch it in your browser.
